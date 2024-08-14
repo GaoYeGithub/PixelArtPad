@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pixel Art Pad</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .palette {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      .color {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        border: 2px solid #000;
+        cursor: pointer;
+      }
+      .controls {
+        margin-top: 10px;
+      }
+      button {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+      }
+    </style>
+    <script src="script.js"></script>
+
+  </head>
+  <body>
+    <h1>Pixel Pad</h1>
+    <h7>project made at hack club workshop</h7>
+    <br>
+    <br>
+    <div class="palette" id="palette"></div>
+    <canvas data-processing-sources="index.java"></canvas>
+    <div class="controls">
+      <button onclick="clearCanvas()">Clear</button>
+      <button onclick="downloadImage()">Download</button>
+      <button onclick="toggleEraser()">Eraser</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
